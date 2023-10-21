@@ -39,7 +39,7 @@ class WrongTypeOfAmount(Exception):
     pass
 
 
-@staticmethod
+
 class Options:
     def login_creator(accounts):
         while True:
@@ -52,7 +52,7 @@ class Options:
             except LoginAlreadyExists as error:
                 print(error)
 
-    @staticmethod
+
     def phone_validator(accounts):
         while True:
             try:
@@ -71,7 +71,7 @@ class Options:
                 print(error)
             except PhoneNumberContainsLetters as error:
                 print(error)
-    @staticmethod
+
     def name_validator():
         while True:
             try:
@@ -87,7 +87,7 @@ class Options:
             except WrongLength as error:
                 print(error)
 
-    @staticmethod
+
     def surname_validator():
         while True:
             try:
@@ -103,7 +103,7 @@ class Options:
             except WrongLength as error:
                 print(error)
 
-    @staticmethod
+
     def login(accounts):
         while True:
             try:
@@ -122,7 +122,7 @@ class Options:
             except InvalidPassword as error:
                 print(error)
 
-    @staticmethod
+
     def IbanCheck(account):
         try:
             if len(account) != 22:
@@ -135,7 +135,7 @@ class Options:
         except IbanHasLetters as error:
             print(error)
 
-    @staticmethod
+
     def amount_validator(ammount):
         try:
             float(ammount)
