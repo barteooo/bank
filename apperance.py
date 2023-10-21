@@ -1,5 +1,6 @@
 
 class Apperance:
+    @staticmethod
     def no_logged_menu():
         print("*" * 30)
         print("Witamy w naszym banku")
@@ -8,6 +9,7 @@ class Apperance:
         print("2. Zaloguj się")
         print("*" * 30)
 
+    @staticmethod
     def logged_menu():
         print("*" * 30)
         print("Pomyślnie zalogowano!")

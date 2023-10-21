@@ -45,12 +45,12 @@ class Account:
     def transfer_money(self,bank):
         while True:
             receiver = input("Podaj numer IBAN odbiorcy:  ")
-            if(Options.IbanCheck(receiver)):
+            if(bank.options.IbanCheck(receiver)):
                 break;
         tittle = input("Podaj tytuł przelewu: ")
         while True:
             amount = input("Podaj kwotę przelewu: ")
-            if Options.amount_validator((amount)):
+            if bank.options.amount_validator((amount)):
                 break;
         try:
             if float(amount) > self.balance:
